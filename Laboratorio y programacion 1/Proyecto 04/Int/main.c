@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "Funciones.h"
 
-int getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int reintentos, int *resultado);
+int getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int reintentos, int *numero);
 
-int isValidInt (int numero, int minimo, int maximo);
+int validInt (int numero, int minimo, int maximo);
 
 int main()
 {

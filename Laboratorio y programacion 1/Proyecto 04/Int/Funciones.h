@@ -14,7 +14,7 @@
 */
 
 
-int getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int reintentos, int *resultado);
+int getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int reintentos, int *numero);
 
 /** \brief valida un numero entero entre un minimo y un maximo
 *
@@ -25,4 +25,4 @@ int getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int reinten
 *
 */
 
-int isValidInt (int numero, int minimo, int maximo);
+int validInt (int numero, int minimo, int maximo);

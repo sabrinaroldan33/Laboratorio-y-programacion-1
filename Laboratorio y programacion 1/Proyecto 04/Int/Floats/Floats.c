@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Funciones.h"
 
-
-
-int validInt (int numero, int minimo, int maximo)
+int validFloat(float numero, float minimo, float maximo)
 {
     if(numero >= minimo && numero <= maximo)
     {
@@ -14,31 +11,31 @@ int validInt (int numero, int minimo, int maximo)
     {
         return 0;
     }
-
 }
 
-int getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int reintentos, int *numero)
+int getFloat(char *mensaje, char *mensajeError,float minimo, float maximo,int reintentos,float *numero)
 {
+    float buffer;
+    int retorno = -1;
 
-    int buffer;
-    int retorno =-1;
-
-    if(*mensaje!=NULL && *mensajeError!=NULL && *numero!=NULL && maximo>=minimo && reintentos>=0)
+    if(*mensaje!=NULL && *mensajeError!=NULL && numero!=NULL && maximo>=minimo && reintentos>=0)
     {
         for(int i=0;i<=reintentos;i++)
         {
             printf("%s",mensaje);
-            scanf("%d",&buffer);
+            scanf("%f", &buffer);
 
-            if(validInt(buffer, minimo, maximo)==1)
+            if(validFloat(buffer,minimo,maximo)==1)
             {
                 *numero=buffer;
                 retorno=0;
                 break;
+
             }
             else
             {
                 printf("%s", mensajeError);
+
             }
 
         }
@@ -46,4 +43,3 @@ int getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int reinten
 
     return retorno;
 }
-
