@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1554419386 source:/home/alumno/Escritorio/Proyecto 5/getArray.c
+	<stdio.h>
+	<stdlib.h>
+	"getArray.h"
+
+1554419386 /home/alumno/Escritorio/Proyecto 5/getArray.h
+
