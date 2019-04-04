@@ -8,7 +8,7 @@ int validChar(char caracter);
 int main()
 {
     char caracterIngresado;
-    int caracterError=(getChar("Ingrese su caracter","Error",2,&caracterIngresado);
+    int caracterError=getChar("Ingrese su caracter \n","Error \n",2,&caracterIngresado);
 
     if(caracterError != 0)
     {
@@ -25,13 +25,13 @@ int main()
 
 int validChar(char caracter)
 {
-    if (isalpha(caracter) == 0)
+    if (isalpha(caracter) != 0)
      {
-        return  0;
+        return  1;
      }
     else
     {
-        return  1;
+        return  0;
     }
 }
 
@@ -40,18 +40,18 @@ int getChar(char *mensaje,char *mensajeError,int reintentos,char *caracter)
     char buffer;
     int retorno = -1;
 
-    if(*mensaje != NULL && *mensajeError != NULL && reintentos >= 0 && *caracter != NULL)
+    if(*mensaje != NULL && *mensajeError != NULL && reintentos >= 0 && caracter != NULL)
     {
-        for(i=0;i<=reintentos;i++)
+        for(int i=0;i<=reintentos;i++)
         {
             printf("%s",mensaje);
             fflush(stdin);
             scanf("%c",&buffer);
 
 
-            if(validChar(buffer)==1)
+            if(validChar(buffer)!=0)
             {
-                buffer=*caracter;
+                *caracter = buffer;
                 retorno = 0;
                 break;
             }
