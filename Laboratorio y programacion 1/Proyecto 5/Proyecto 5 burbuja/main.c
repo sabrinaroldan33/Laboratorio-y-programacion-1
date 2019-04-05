@@ -2,34 +2,42 @@
 #include <stdlib.h>
 //forma menos ineficiente sin usar los 2 for
 // quicksort para ordenar kilombo, inserction para insertar algo perdido
+int swap(int A[i],A[i+1]);
+
 int main()
 {
-limite = 4;
+
+int limite = 4;
+int A[i]={8,1,0,4};
 
 do
 {
-for(i=0,i<limite-i;i++)
-{   flagswap=0;
-    if(a[i]>a[i+1])
+
+for(i=0;i<limite-i;i++)
+{
+    int flagswap=0;
+    if(A[i]>A[i+1])
     {
-        swap(a[i];a[i+1])
+        swap(A[i],A[i+1]);
         flagswap=1;
     }
 }
 
-    return 0;
-}
 
-}while(flagswap) //se termina si queda en 0 porque es falso
+}
+while(flagswap) //se termina si queda en 0 porque es falso
 //swap no existe, hay que hacerla en funcion
 
 
-int swap(A[i],A[i+1])
+int swap(int A[i],A[i+1])
 {
   int buffer =0;
 
-  aux = A[i];
+  buffer = A[i];
   A[i] = A[i+1];
-  A[i+1] = aux;
+  A[i+1] = buffer;
+
+
+}
 
 }
