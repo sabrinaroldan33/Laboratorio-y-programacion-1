@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 
 /** \brief recibe un numero entero entre un minimo y un maximo y lo devuelve
 *
