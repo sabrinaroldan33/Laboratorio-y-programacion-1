@@ -12,26 +12,46 @@ int main()
     printf("Ingrese su nombre aqui ");
     fgets(buffer,sizeof(buffer),stdin);
 
-    if(strcmp(buffer,buffer)>0)
+
+    for(int i=0;i<=buffer;i++)
+    {
+     buffer[i];
+
+    if(buffer[i] >= 'a' && buffer[i] <= 'z' || buffer[i] >= 'A' && buffer [i] <= 'Z')
+    {
+     strcpy(nombre,buffer);
+     printf("Su nombre es %s", nombre);
+     break;
+    }
+    else
+    {
+    printf("Ingrese un numero valido");
+    break;
+
+    }
+
+
+    }
+
+ return 0;
+}
+
+
+
+
+/*
+    if(strcmp(buffer,buffer)>0) //tengo que usar el strlen recorrer el array y validar si tiene un numero usando FOR, sino copio el valor del buffer en numero
     {
     printf("Error, ingrese un nombre mas chico");
     }
     else
     {
-    strcpy(nombre,buffer);
+    strcpy(nombre,buffer,sizeof(nommbre)); //no me acuerdo si en el sizeof va buffer
     }
 
     printf("%s",nombre);
+*/
 
-
-
-
-
-
-
-
-    return 0;
-}
 
 
 
