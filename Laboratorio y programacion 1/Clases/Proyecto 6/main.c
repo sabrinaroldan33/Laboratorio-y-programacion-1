@@ -74,3 +74,23 @@ char nombre2[257]="HOLA";
     strlen() //para saber cuantos caracteres tiene adentro
     strcmp() //me dice cual de los dos arrays es mas grande si izq o der o si son iguales con -1,0 y 1
  */
+-----------
+EJEMPLO FUNCIONES
+
+#include <string.h>
+
+int utn_isValidnumber(char *string);
+int utn_getNumber(char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos,int resultado);
+int utn_getString(char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos,char *resultado);
+
+int main()
+{
+
+
+
+}
+
+int utn_isValidnumber(char *string);
+{
+    return 1;
+}
