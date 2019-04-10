@@ -94,9 +94,24 @@ int utn_getNumber(char *mensaje,char *mensajeError,int minimo,int maximo,int rei
 
 {
     int retorno = -1;
+    char buffer[17]; //16+1
+    int bufferInt //mejor que guardarlo en resultado
     if(*mensaje != NULL)//FALTA VALIDAR
     {
+        if(utn_getString(mensaje,mensajeError,1,16,reintentos,buffer)==0)
+        {
+            if(utn_isValidNumber(buffer)) //ya te va a devolver 1
+            bufferInt = atoi(buffer); //para convertir un string a int
+            if(bufferInt >= minimo && bufferInt <= maximo)
+            {
+                *resultado = bufferInt;
+                retorno = 0;
+            }
+        }
+        else
+        {
 
+        }
 
 
     }
