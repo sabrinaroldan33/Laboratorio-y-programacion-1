@@ -19,7 +19,7 @@ int main()
 
     if(buffer[i] >= 'a' && buffer[i] <= 'z' || buffer[i] >= 'A' && buffer [i] <= 'Z')
     {
-     strcpy(nombre,buffer);
+     strncpy(nombre,buffer,strlen(buffer));
      printf("Su nombre es %s", nombre);
      break;
     }
