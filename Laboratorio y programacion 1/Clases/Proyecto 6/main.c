@@ -80,7 +80,7 @@ EJEMPLO FUNCIONES
 #include <string.h>
 
 int utn_isValidnumber(char *string);
-int utn_getNumber(char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos,int resultado);
+int utn_getNumber(char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos,int *resultado);
 int utn_getString(char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos,char *resultado);
 
 int main()
@@ -90,7 +90,31 @@ int main()
 
 }
 
+int utn_getNumber(char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos,int *resultado);
+
+{
+    int retorno = -1;
+    if(*mensaje != NULL)//FALTA VALIDAR
+    {
+
+
+
+    }
+    return retorno;
+
+}
+
+
+
 int utn_isValidnumber(char *string);
 {
     return 1;
+}
+
+int utn_getString(char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos,char *resultado);
+
+{
+
+strncpy(resultado, "1234",5);
+return 0;
 }
