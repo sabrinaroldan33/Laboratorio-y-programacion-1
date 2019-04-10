@@ -13,7 +13,7 @@ int main()
     fgets(buffer,sizeof(buffer),stdin);
 
 
-    for(int i=0;i<=buffer;i++)
+    for(int i=0;i<=sizeof(buffer);i++)
     {
      buffer[i];
 
