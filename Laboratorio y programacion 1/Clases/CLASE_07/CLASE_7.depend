@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1555339531 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\clase_07\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1555341449 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\clase_07\utn.h
+
+1555341506 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\clase_07\utn.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"utn_isValid.h"
+
+1555341449 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\clase_07\utn_isvalid.h
+
+1555341506 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\clase_07\utn_isvalid.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn_isValid.h"
+

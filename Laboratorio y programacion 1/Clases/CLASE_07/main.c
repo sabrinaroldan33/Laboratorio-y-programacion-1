@@ -5,18 +5,18 @@
 int main()
 {
     char auxName[500] = "test";
-    if(getName( "Nombre?: ",
-                "Error",
-                2,
-                5,
-                2,
-                auxName) == 0)
+    if(utn_getName( "Ingrese su nombre: ",
+                    "Nombre no valido,",
+                    2,
+                    6,
+                    2,
+                    auxName) == 0)
     {
-        printf("OK: %s",auxName);
+        printf("Su nombre es %s",auxName);
     }
     else
     {
-        printf("ER: %s",auxName);
+        printf("Nombre incorrecto: %s",auxName);
     }
     return 0;
 }
