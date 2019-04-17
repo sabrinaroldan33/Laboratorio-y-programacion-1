@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555460984 source:/home/alumno/Entregas/Lucas Rodriguez (copia)/Proyecto 8/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
