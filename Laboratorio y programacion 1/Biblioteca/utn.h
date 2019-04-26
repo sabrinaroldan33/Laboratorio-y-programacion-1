@@ -34,5 +34,6 @@ int utn_getName (   char* msg,
                 char* resultado);
 
 
+int utn_getTexto(char* msg, char* msgError, int minSize, int maxSize, int reintentos, char* input);
 
-
+int isValidTexto(char* stringRecibido);

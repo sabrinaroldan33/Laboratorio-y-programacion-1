@@ -70,7 +70,7 @@ int utn_getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int rei
     int buffer;
     int retorno =-1;
 
-    if(*mensaje!=NULL && *mensajeError!=NULL && *numero!=NULL && maximo>=minimo && reintentos>=0)
+    if(mensaje!=NULL && mensajeError!=NULL && numero!=NULL && maximo>=minimo && reintentos>=0)
     {
         for(int i=0;i<=reintentos;i++)
         {
@@ -94,4 +94,50 @@ int utn_getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int rei
     return retorno;
 }
 
+//*************************************************************
+int utn_getTexto(char* msg, char* msgError, int minSize, int maxSize, int reintentos, char* input)
+{
+    int retorno=-1;
+    char bufferStr[maxSize];
+
+    if(msg!=NULL && msgError!=NULL && minSize<maxSize && reintentos>=0 && input!=NULL)
+    {
+        do
+        {
+            if(!getString(msg,msgError,minSize,maxSize,&reintentos,bufferStr)) //==0 sin errores !0
+            {
+                if(isValidTexto(bufferStr)==1)
+                {
+                    strncpy(input,bufferStr,maxSize);
+                    retorno=0;
+                    break;
+                }
+                else
+                {
+                    printf("%s 2",msgError);
+                    reintentos--;
+                }
+            }
+        }
+        while(reintentos>=0);
+    }
+    return retorno;
+}
+
+int isValidTexto(char* stringRecibido)
+{
+    int retorno=1;  // para las funciones isValid arranco con verdadero y cambio cuando encuentro un error
+    int i;
+    for(i=0;stringRecibido[i]!='\0';i++)
+    {
+        if(stringRecibido[i]<' ' || stringRecibido[i]>'z')
+        {
+            retorno=0;
+            break;
+        }
+    }
+    return retorno;
+}
+
+//*************************************************************
 
