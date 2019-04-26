@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1556230021 source:/home/alumno/Documentos/Lucas Rodriguez/Clase 10/Funciones.c
+
+1556234179 source:/home/alumno/Documentos/Lucas Rodriguez/Clase 10/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Biblioteca/utn.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"utn_isValid.h"
+
+1556234179 /home/alumno/Documentos/Lucas Rodriguez/Clase 10/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Biblioteca/utn.h
+
+1556231282 /home/alumno/Documentos/Lucas Rodriguez/Clase 10/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Biblioteca/utn_isValid.h
+
+1556231282 source:/home/alumno/Documentos/Lucas Rodriguez/Clase 10/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Biblioteca/utn_isValid.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn_isValid.h"
+
+1556237056 source:/home/alumno/Documentos/Lucas Rodriguez/Clase 10/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Pan.h"
+	"utn.h"
+	"utn_isValid.h"
+
+1556238911 source:/home/alumno/Documentos/Lucas Rodriguez/Clase 10/utn.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"utn_isValid.h"
+
+1556238768 /home/alumno/Documentos/Lucas Rodriguez/Clase 10/utn.h
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn_isValid.h"
+
+1556238251 /home/alumno/Documentos/Lucas Rodriguez/Clase 10/utn_isValid.h
+
+1556231282 source:/home/alumno/Documentos/Lucas Rodriguez/Clase 10/utn_isValid.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn_isValid.h"
+
+1556237860 /home/alumno/Documentos/Lucas Rodriguez/Clase 10/Pan.h
+
+1556238937 source:/home/alumno/Documentos/Lucas Rodriguez/Clase 10/Pan.c
+	"Pan.h"
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"utn_isValid.h"
+
