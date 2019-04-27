@@ -14,7 +14,7 @@
    typedef struct
 
    {
-   int isEmpty;
+   int isEmpty; // o int estado?
    int id;
    char nombre[30];
    char apellido[30];
@@ -24,11 +24,14 @@
 
 
 localidad construirLocalidad(int id,char descripcion[30]);
-// persona construirPersona(int id,int edad,char nombre[30],char apellido[30],int *idLocalidad);
-int cargarLocalidades(int tamaño,localidad listado);
+int cargarLocalidades(int tamanio,localidad listado);
 void mostrarLocalidad(localidad,int size);
 int mostrarListadoLocalidad(localidad[],int size);
-
+//------------------------------------------------------------ PERSONAS
+//void inicializarListado(int tamanio,persona[])
+// persona construirPersona(int id,int edad,char nombre[30],char apellido[30],int *idLocalidad);
+//int buscarLugar(int tamanio,localidad listado); //Si retorna -1 no hay lugar, >0hay lugar
+cargarPersona(int tamanio,persona[]);
 
 
 
