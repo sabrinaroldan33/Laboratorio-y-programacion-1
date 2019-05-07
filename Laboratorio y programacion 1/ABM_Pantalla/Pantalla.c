@@ -4,9 +4,11 @@
 #include "Pantalla.h"
 #include "Publicidad.h"
 #include "utn_strings.h"
+
+
 static int generarId(void);
 
-int pan_initPantalla(Pantalla* pPantalla,int len)
+int pan_initPantalla(Pantalla* pPantalla, int len)
 {
     int i;
     if(pPantalla!=NULL && len>0)
@@ -29,6 +31,7 @@ int pan_addPan(Pantalla* pPantalla,int len,int pIndex,char* msgE,int tries)
     float auxPrecio;
     int auxTipo;
     int retorno=-1;
+
     if((pPantalla!=NULL)&&(len>0))
     {
         if(((getStringLetras(bufferName,"\nIngrese Nombre: ",msgE,tries)==0)&&
@@ -68,10 +71,11 @@ int pan_alter(Pantalla* pPantalla, int len,char* msgE,int tries)
     if((pPantalla!=NULL)&&(len>0))
     {
         auxID=pan_getID(pPantalla,len,msgE,tries);
+
         if(auxID>=0)
         {
             posOfID=pan_findPanById(pPantalla,len,auxID);
-            if(posOfID!=-1)
+            if(posOfID>=0)
             {
                 while(opcion!=5)
                 {
@@ -138,13 +142,14 @@ int pan_removePantalla(Pantalla* pPantalla, int len,char* msgE,int tries)
     int auxID;
     int posOfID;
     int retorno=-1;
+
     if(pPantalla!=NULL && len>0)
     {
         auxID=pan_getID(pPantalla,len,msgE,tries);
          if(auxID>=0)
         {
             posOfID=pan_findPanById(pPantalla,len,auxID);
-            if(posOfID!=-1)
+            if(posOfID>=0)
             {
                pPantalla[posOfID].isEmpty=1;
                retorno=0;
@@ -159,6 +164,7 @@ int pan_orderByPrice(Pantalla* pPantalla, int len)
     int i;
     int j;
     Pantalla buffer;
+
     for(i=0;i<len-1;i++)
     {
         if(pPantalla[i].isEmpty==1)
@@ -187,6 +193,7 @@ int pan_orderByID(Pantalla* pPantalla, int len)
     int i;
     int j;
     Pantalla buffer;
+
     for(i=0;i<len-1;i++)
     {
         if(pPantalla[i].isEmpty==1)
@@ -222,6 +229,7 @@ int pan_printPantalla(Pantalla* pPantalla,int len)
                    pPantalla[i].idPantalla,pPantalla[i].nombre,pPantalla[i].direccion,pPantalla[i].precio,pPantalla[i].tipo);
             flag=0;
         }
+
     }
     if(flag)
     {
@@ -265,6 +273,7 @@ int pan_getID (Pantalla* pPantalla,int len,char* msgE,int tries)
     int retorno=-1;
     char bufferID[20];
     int auxID;
+
     if(pPantalla!=NULL && len>0)
     {
         if(!getStringNumeros(bufferID,"\nIngrese ID: ",msgE,tries))

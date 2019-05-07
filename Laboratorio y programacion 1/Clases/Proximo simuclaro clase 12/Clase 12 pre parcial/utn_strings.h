@@ -3,7 +3,7 @@
 
 
 // Obtener el String
-int getString(char* pStr, char* msg, char*msgE);
+int getString (char* pStr, char* msg, char*msgE);
 // Obtener Int
 int getInt (int *pNum, char* msg, char* msgE);
 // Obtener Float

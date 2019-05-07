@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1557244239 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\llamada.c
+
+1557254425 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+
+1557081476 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\utn_strings.h
+
+1557253803 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\asociado.c
+	"Asociado.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+
+1557254030 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\asociado.h
+

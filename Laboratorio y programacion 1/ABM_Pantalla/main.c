@@ -17,6 +17,7 @@ int main()
 
     pan_initPantalla(visores,LEN_LISTA);
     pub_initPublicidad(Marketing,LEN_LISTA);
+
     while(opcion!=6)
     {
         getIntInRange(&opcion,"\n1)Alta de pantalla\n2)Modificar datos de pantalla\n3)Baja de pantalla\n"
@@ -97,7 +98,7 @@ int main()
             }
             case 5:
             {
-                if(flag)
+                if(flag==0)
                 {
                     pan_printPantalla(visores,LEN_LISTA);
                 }

@@ -181,3 +181,39 @@
 	<string.h>
 	"utn_strings.h"
 
+1557083109 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\abm_pantalla\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+	"Pantalla.h"
+	"Publicidad.h"
+
+1557081476 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\abm_pantalla\utn_strings.h
+
+1557080707 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\abm_pantalla\pantalla.h
+
+1557080924 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\abm_pantalla\publicidad.h
+
+1557091185 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\abm_pantalla\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pantalla.h"
+	"Publicidad.h"
+	"utn_strings.h"
+
+1557091185 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\abm_pantalla\publicidad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pantalla.h"
+	"Publicidad.h"
+	"utn_strings.h"
+
+1557086393 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\abm_pantalla\utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+

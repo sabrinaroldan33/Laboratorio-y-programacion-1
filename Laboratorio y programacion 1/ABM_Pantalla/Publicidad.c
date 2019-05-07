@@ -6,6 +6,7 @@
 #include "utn_strings.h"
 static int generarId(void);
 
+// Inicializa la pantalla
 int pub_initPublicidad(Publicidad* pPublicidad,int len)
 {
     int i;
@@ -33,7 +34,7 @@ int pub_addPub(Publicidad* pPublicidad,Pantalla* pPantalla,int len,char* msgE,in
     {
         auxID=pub_getID(pPublicidad,len,msgE,tries);
         posOfId=pan_findPanById(pPantalla,len,auxID);
-        if((auxID>=0)&&(posOfId!=-1))
+        if((auxID>=0)&&(posOfId>=0))
         {
             if((!getCuit(bufferCuit,"\nIngrese CUIT: ",msgE,tries))&&
                (!getStringAlphanumeric(bufferArchivo,"\nIngrese nombre de Archivo: ",msgE,tries)))
