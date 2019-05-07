@@ -16,7 +16,7 @@ typedef struct
 int pan_initAsociado(sAsociado* pAsociado,int len);
 int aso_addAso(sAsociado* pAsociado,int len,int pIndex,char* msgE,int tries);
 
-static int generarId(void);
+
 
 
 

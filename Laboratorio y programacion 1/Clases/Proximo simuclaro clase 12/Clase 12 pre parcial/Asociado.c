@@ -3,6 +3,7 @@
 #include <string.h>
 #include "Asociado.h"
 #include "utn_strings.h"
+static int generarId(void);
 
 int aso_initAsociado(sAsociado* pAsociado,int len)
 {
