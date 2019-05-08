@@ -13,7 +13,7 @@ typedef struct
     int fechaAso;
 
 
-}Socio;
+}socio;
 
 
 #endif // SOCIOS_H_INCLUDED

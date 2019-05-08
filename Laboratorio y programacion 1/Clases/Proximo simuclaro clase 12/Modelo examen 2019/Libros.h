@@ -11,5 +11,9 @@ typedef struct
 
 }libro;
 
+int lib_initLibro(libro* pLibro, int len);
+int lib_addLibro(libro* pLibro,int len,int pIndex,char* msgE,int tries);
+int lib_alter(libro* pLibro, int len,char* msgE,int tries);
+int lib_getID (libro* pLibro,int len,char* msgE,int tries);
 
 #endif // LIBROS_H_INCLUDED
